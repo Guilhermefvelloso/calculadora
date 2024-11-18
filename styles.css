@@ -1,0 +1,92 @@
+
+/* Estilização geral */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Define a altura para ocupar toda a tela */
+  width: 100vw; /* Garante que a largura seja 100% da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* Faz com que a imagem cubra a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  overflow: hidden; /* Remove rolagem se algo ultrapassar a tela */
+  transition: background-image 1.5s ease-in-out; /* Suaviza a troca de imagens */
+  background-attachment: fixed; /* Mantém a imagem fixa na viewport */
+}
+
+
+
+  .calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    background: #1e1e1e;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
+  }
+  
+  /* Display */
+  #display {
+    background: #e9ecef;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: right;
+    overflow-x: auto;
+  }
+  
+  /* Botões */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    font-size: 1.5rem;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+    background: #1f1f1f;
+  }
+  
+  .btn:hover {
+    background-color: #d6d6d6;
+    background: #00ffff;
+  }
+  
+  .operator {
+    background: #007bff;
+    color: white;
+  }
+  
+  .operator:hover {
+    background: #0056b3;
+  }
+  
+  .clear {
+    background: #ff4d4d;
+    color: white;
+  }
+  
+  .clear:hover {
+    background: #cc0000;
+  }
+  
+  .equal {
+    background: #28a745;
+    color: white;
+    grid-column: span 2;
+  }
+  
+  .equal:hover {
+    background: #1e7e34;
+  }
+  
